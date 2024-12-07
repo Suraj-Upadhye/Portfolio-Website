@@ -1,0 +1,693 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Home Section Styling */
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #eef2f3;
+    min-height: 100vh;
+}
+
+.homeContent {
+    max-width: 600px;
+}
+
+.greeting {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.greeting .highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.profession {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.introduction {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.primaryBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.primaryBtn:hover {
+    background-color: #0056b3;
+}
+
+.secondaryBtn {
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.secondaryBtn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.socialLinks img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.socialLinks img:hover {
+    transform: scale(1.1);
+}
+
+.homeImage img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* About Section Styling */
+#about {
+    padding: 100px 20px;
+    background-color: #f8f9fa;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutMe {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.aboutMeData {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.aboutMeData strong {
+    color: #007bff;
+}
+
+.expertise {
+    flex: 1;
+    min-width: 300px;
+}
+
+.expertiseTitle {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.expertiseBoxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box h4 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* Education Section Styling */
+#education {
+    padding: 100px 20px;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.educationContainer {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #007bff;
+    transform: translateX(-50%);
+}
+
+.educationEntries {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.educationEntry {
+    position: relative;
+    padding: 20px 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007bff;
+}
+
+.educationEntry h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.educationDuration {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.educationDetails {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.educationDetails ul {
+    margin-top: 10px;
+    list-style: disc inside;
+    color: #333;
+}
+
+.educationDetails ul li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        display: none;
+    }
+
+    .educationEntry {
+        border-left: none;
+    }
+}
+
+
+/* Skills Section Styling */
+#skills {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skillCategory {
+    flex: 1 1 calc(45% - 40px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skillTitle {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-align: left;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.skillList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.skillList li {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .skillCategory {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+/* Projects Section */
+#projects {
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projectCard {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(45% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.projectImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projectDetails {
+    padding: 20px;
+    text-align: left;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.projectDescription {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.projectLinks {
+    display: flex;
+    gap: 10px;
+}
+
+.projectLinks .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.projectLinks .btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .projectCard {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* Contact Section Styling */
+#contact {
+    padding: 90px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Section Title */
+#contact .sectionTitle {
+    font-size: 28px; /* Slightly smaller font size */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Contact Form Styling */
+.contactForm {
+    max-width: 500px; /* Reduced max-width to make it smaller */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Texts */
+.formTexts {
+    font-size: 16px; /* Reduced font size */
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input Fields Styling */
+.inputFields {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px; /* Reduced margin for closer spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Slightly smaller font size */
+}
+
+/* Textarea Styling */
+.textarea {
+    height: 130px; /* Slightly smaller textarea */
+    resize: none;
+}
+
+/* Submit Button */
+.submitBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Social Media Icons Styling */
+.socialsContactForm {
+    margin-top: 20px; /* Reduced top margin for better positioning */
+    text-align: center;
+}
+
+.socialLinks1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialIcon {
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socialIcon:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1a1a1a; /* Darker background for footer */
+    color: white;
+    text-align: center;
+    border-top: 3px solid #4CAF50; /* Green accent line */
+}
+
+/* Footer Text */
+.footerText {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Footer Social Icons */
+footer .socialsContactForm {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer Social Icons - Adjust icons size for footer */
+footer .socials_images {
+    width: 35px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer .socials_images:hover {
+    transform: scale(1.2);
+}
+
+.footerLinks a{
+    color: #0056b3;
+}
+
+
+
+
+
+
+/* General Navbar Styling */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1a1a1a;  /* Dark background to match overall theme */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth */
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar Logo / Name */
+.myData {
+    display: flex;
+    align-items: center;
+}
+
+#name h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+#navbar:hover #name h1 {
+    color: #007bff; /* Change name color on navbar hover */
+}
+
+/* Navbar Links */
+#nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.navItems {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navItems:hover {
+    background-color: #007bff; /* Green background on hover */
+    color: white;
+    border-radius: 4px;
+}
+
+/* Hover effects for the nav items */
+.navItems:focus, .navItems:hover {
+    outline: none;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Menu Icon (Hamburger) for Mobile */
+#menuIcon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+.bar {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+    #menuIcon {
+        display: none; /* Hide the menu icon on desktop */
+    }
+
+    #nav {
+        display: flex; /* Horizontal navbar items on desktop */
+    }
+
+    #navbar:hover {
+        background-color: #333; /* Darker background when hovered on desktop */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    #nav {
+        display: none; /* Hide nav items initially on mobile */
+        flex-direction: column;
+        background-color: #1a1a1a;  /* Dark background for mobile */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding-top: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav.active {
+        display: flex; /* Show menu items when the menu is active */
+    }
+
+    .navItems {
+        text-align: center;
+        padding: 15px 20px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #menuIcon {
+        display: block; /* Show menu icon on mobile */
+    }
+}
+
+/* Active Class for Mobile Menu */
+#nav.active {
+    display: flex !important;
+}
+
+/* Smooth transition for mobile menu */
+#nav {
+    transition: all 0.3s ease;
+}
