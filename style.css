@@ -376,7 +376,7 @@ html {
 .projectImg {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 .projectDetails {
@@ -690,4 +690,114 @@ footer .socials_images:hover {
 /* Smooth transition for mobile menu */
 #nav {
     transition: all 0.3s ease;
+}
+
+
+
+
+
+/*  dark theme */
+
+/* Common Styles for Both Themes */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Default (Light Theme) */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#home {
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text */
+}
+
+.homeContent .greeting, .profession {
+    color: #333; /* Dark text */
+}
+
+.primaryBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.primaryBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #181818;
+    color: #e4e4e4;
+}
+
+html.dark-theme {
+    background-color: #181818;
+    color: #e4e4e4;
+}
+
+body.dark-theme #home {
+    background-color: #181818;
+    color: #e4e4e4;
+}
+
+body.dark-theme .primaryBtn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+body.dark-theme .primaryBtn:hover {
+    background-color: #0056b3;
+}
+
+body.dark-theme .secondaryBtn {
+    background-color: #444;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+body.dark-theme .secondaryBtn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+body.dark-theme .socialLinks img {
+    transform: scale(1.1);
+}
+
+body.dark-theme .footerText {
+    color: #bbb;
+}
+
+body.dark-theme footer {
+    background-color: #1a1a1a;
+}
+
+
+
+/* Contact form  */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+
+
+/* gsap */
+
+.btn {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
